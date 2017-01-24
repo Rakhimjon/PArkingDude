@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backround">
+
+    <TextView
+        android:text="Parking dude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_text"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        android:layout_marginTop="84dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_text"
+        android:text="Creat your parking dude acccount                   and get access to awesome features"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/text_create"
+        android:paddingBottom="12dp"
+
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:id="@+id/creat_account"
+        android:text="Creat Accaount"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignIn"
+        android:text="Sign In"
+        android:layout_below="@+id/creat_account"
+        android:layout_alignLeft="@+id/creat_account"
+        android:layout_alignStart="@+id/creat_account"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

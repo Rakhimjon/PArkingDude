@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_validate_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <TextView
+        android:id="@+id/sentNumbertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Code was sent the number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sentNumbertxt"
+        android:gravity="center_horizontal"
+        android:text="+998 90 930 24 51"
+        android:textSize="16sp"
+
+        />
+
+    <EditText
+        android:id="@+id/enterCode"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:inputType="phone"
+        android:hint="Enter code" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterCode"
+        android:text="Did not recieve the code?"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:id="@+id/text_recieve"
+        android:layout_marginTop="@dimen/activity_margin_top"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="false"
+        android:id="@+id/button"
+        android:layout_below="@+id/text_recieve"
+        android:layout_centerHorizontal="true"
+        android:text="Resend "
+        android:elevation="1dp"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>
