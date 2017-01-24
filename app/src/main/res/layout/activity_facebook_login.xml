@@ -5,17 +5,15 @@
     android:id="@+id/activity_facebook_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.parking.parkingdude.activity.FacebookLogin">
-
-    <AutoCompleteTextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
 
-        android:layout_below="@+id/login_button"/>
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
@@ -27,7 +25,7 @@
         android:textSize="18sp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="85dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
 
@@ -35,9 +33,47 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text"
+        android:id="@+id/textNumber"
         android:layout_below="@id/login_button"
-        android:text="khlskhlkdhlaskd"/>
+        android:text="Or sign in with your phone number"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/editNumber"
+       android:layout_below="@+id/textNumber"
+       android:layout_marginLeft="24dp"
+       android:layout_marginRight="24dp"
+       android:layout_marginTop="24dp"
+       android:background="@drawable/edittext_bg"
+       android:padding="12dp"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verfyText"
+        android:layout_below="@+id/editNumber"
+        android:text="We well send a text to verfy your phone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="39dp"
+        android:background="@color/colorPrimary"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/verfyText"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
